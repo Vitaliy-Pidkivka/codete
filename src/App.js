@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import './App.css';
@@ -39,8 +39,8 @@ const Dashboard = styled.div`
      height: calc(100% - 20px);
      color: white;
      transition: all 1s ease-in-out;
-     visibility: ${props => props.isHiding ? 'hidden' : 'visible'};
-     opacity: ${props => props.isHiding ? '0' : '1'};
+     visibility: ${({ isHiding }) => isHiding ? 'hidden' : 'visible'};
+     opacity: ${({ isHiding }) => isHiding ? '0' : '1'};
      
      h1 { 
         text-transform: uppercase; 
@@ -55,6 +55,7 @@ const Avatar = styled.img`
 
 const App = ({profileInfo, setProfile, isHiding}) => {
     const [avatarUrl, setAvatarUrl] = useState('')
+    const [avatar, ...textProfileFields] = profileInfo
 
     const uploadAvatarUrl = (file) => {
         const reader = new FileReader();
@@ -69,14 +70,16 @@ const App = ({profileInfo, setProfile, isHiding}) => {
         <Wrapper>
             <Dashboard isHiding={isHiding}>
                 <h1>Profile Info:</h1>
-                {profileInfo.map(({name, id, value}) => (
+                {avatarUrl && (
+                  <Avatar alt="Avatar" src={avatarUrl}/>
+                )}
+                {textProfileFields.map(({name, id, value}) => (
                     <TextGroup
                         key={id}
                         heading={name}
                         text={value}
                     />
                 ))}
-                {avatarUrl && <Avatar alt="Avatar" src={avatarUrl}/>}
             </Dashboard>
             <StyledApp>
                 <ProfileForm
