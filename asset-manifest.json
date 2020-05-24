@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/codete/static/css/main.1e5f7975.chunk.css",
+    "main.js": "/codete/static/js/main.927c1eed.chunk.js",
+    "main.js.map": "/codete/static/js/main.927c1eed.chunk.js.map",
+    "runtime-main.js": "/codete/static/js/runtime-main.f9443d88.js",
+    "runtime-main.js.map": "/codete/static/js/runtime-main.f9443d88.js.map",
+    "static/js/2.00deb8bf.chunk.js": "/codete/static/js/2.00deb8bf.chunk.js",
+    "static/js/2.00deb8bf.chunk.js.map": "/codete/static/js/2.00deb8bf.chunk.js.map",
+    "index.html": "/codete/index.html",
+    "precache-manifest.3c3140758bd2e0d2f6cbb0cdf8fbba50.js": "/codete/precache-manifest.3c3140758bd2e0d2f6cbb0cdf8fbba50.js",
+    "service-worker.js": "/codete/service-worker.js",
+    "static/css/main.1e5f7975.chunk.css.map": "/codete/static/css/main.1e5f7975.chunk.css.map",
+    "static/js/2.00deb8bf.chunk.js.LICENSE.txt": "/codete/static/js/2.00deb8bf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9443d88.js",
+    "static/js/2.00deb8bf.chunk.js",
+    "static/css/main.1e5f7975.chunk.css",
+    "static/js/main.927c1eed.chunk.js"
+  ]
+}
